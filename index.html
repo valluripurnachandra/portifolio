@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Valluri Purna Chandra Rao - Professional Portfolio. Full Stack Developer with expertise in Python, Flask, and Web Development.">
+    <meta name="keywords" content="Valluri Purna Chandra Rao, Portfolio, Full Stack Developer, Python Developer, Web Development">
+    <meta name="author" content="Valluri Purna Chandra Rao">
+    <meta property="og:title" content="Valluri Purna Chandra Rao - Portfolio">
+    <meta property="og:description" content="Professional portfolio of Valluri Purna Chandra Rao, showcasing skills, projects, and experience in software development.">
+    <meta property="og:type" content="website">
+    <title>Valluri Purna Chandra Rao</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav-dots">
+            <span class="dot active" data-slide="home"></span>
+            <span class="dot" data-slide="about"></span>
+            <span class="dot" data-slide="skills"></span>
+            <span class="dot" data-slide="projects"></span>
+            <span class="dot" data-slide="contact"></span>
+        </div>
+    </div>
+
+    <div class="slides-container">
+        <!-- Home Slide -->
+        <section class="slide active" id="home">
+            <div class="profile-card" data-aos="fade-up">
+                <div class="profile-header">
+                    <div class="profile-img-container">
+                        <img src="{{ url_for('static', filename='1734012459216.jpg') }}" alt="Profile Picture" class="profile-img">
+                        <div class="status-circle"></div>
+                    </div>
+                    <h1 class="glitch" data-text="Your Name">Valluri Purna Chandra Rao</h1>
+                    <p class="title">Artificial Intelligence and Machine Learning Enthusiast</p>
+                    <p class="title">Full Stack Developer</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Valluripurna" class="social-icon github" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span class="tooltip">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/valluri-purna-chandra-rao-487338327/" class="social-icon linkedin" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="tooltip">LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/PurnaValluri03" class="social-icon twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <span class="tooltip">Twitter</span>
+                    </a>
+                    <a href="mailto:purnavalluri03@gmail.com" class="social-icon email" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                        <span class="tooltip">Email</span>
+                    </a>
+                </div>
+
+                <div class="nav-buttons">
+                    <a href="#about" class="nav-button">About Me</a>
+                    <a href="#skills" class="nav-button">Skills</a>
+                    <a href="#projects" class="nav-button">Projects</a>
+                    <a href="#contact" class="nav-button">Contact Me</a>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="{{ url_for('static', filename='Purna_Valluri_CV.pdf') }}" class="cta-button primary">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Slide -->
+        <section class="slide" id="about">
+            <div class="content-card about-section" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I’m a Full Stack Developer specializing in artificial intelligence, machine learning, and modern web applications to create innovative, data-driven solutions. I focus on enhancing user experiences and driving business growth. With expertise in front-end and back-end development, I deliver scalable and efficient applications.
+                        </p>
+                        <div class="Internship Experience">
+                            <div class="timeline-item" data-aos="fade-right">
+                                <h3>Internships Experience</h3>
+                                <p class="company"></p>
+                                <p class="period">2022 - Present</p>
+                                <ul>
+                                    <li>Oasis Infobyte Intern</li>
+                                    <li>Prodigy Intern</li>
+                                    <li>Aicte Intern</li>
+                                    <li>Infosys Instep Intern</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                                <h3>Full Stack Developer</h3>
+                                <p class="company">Digital Innovations</p>
+                                <p class="period">2022 - Present</p>
+                                <ul>
+                                    <li>Developed responsive web applications</li>
+                                    <li>Optimized application performance</li>
+                                    <li>Integrated third-party APIs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Slide -->
+        <section class="slide" id="skills">
+            <div class="content-card skills-section" data-aos="fade-up">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category" data-aos="fade-right">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag">React.js</div>
+                            
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">HTML5</div>
+                            <div class="skill-tag">CSS3</div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-left">
+                        <h3>Backend Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag">Python/Flask</div>
+                            <div class="skill-tag">Django</div>
+                        
+                            <div class="skill-tag">SQL</div>
+                            <div class="skill-tag">MongoDB</div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-right">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag">Git</div>
+                            <div class="skill-tag">Docker</div>
+                            <div class="skill-tag">AWS</div>
+                            <div class="skill-tag">Github</div>
+                            <div class="skill-tag">Postman</div>
+                            <div class="skill-tag">VS Code</div>
+                            <div class="skill-tag">Figma</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Slide -->
+        <section class="slide" id="projects">
+            <div class="content-card projects-section" data-aos="fade-up">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='images/project1.jpeg') }}" alt="Project 1">
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-featured e-commerce platform with real-time inventory management and payment processing.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Flask</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='images/project2.jpeg') }}" alt="Project 2">
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A collaborative task management application with real-time updates and team features.</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Flask</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='images/project3.jpeg') }}" alt="Project 3">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI-Powered Chat Application</h3>
+                            <p>Real-time chat application with AI-powered features including sentiment analysis and language translation.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>WebSocket</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Slide -->
+        <section class="slide" id="contact">
+            <div class="content-card contact-section" data-aos="fade-up">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>purnavalluri03@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9392806522</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Andhra Pradesh, India</span>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
